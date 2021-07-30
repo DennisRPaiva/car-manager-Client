@@ -1,0 +1,21 @@
+<h1 class="display-6">Cria Carro</h1>
+<hr>
+
+<form>
+  <div class="mb-3">
+    <label class="form-label">Tamanho</label>
+    <input [(ngModel)]="size" name="size" class="form-control" id="size" aria-describedby="Tamanho do carro"
+      placeholder="Colossal">
+    <div class="form-text">Escolha um tamanho para o carro criado.</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Cor</label>
+    <input [(ngModel)]="color" name="color" class="form-control" id="size" aria-describedby="Tamanho do carro"
+      placeholder="Void">
+    <div class="form-text">Escolha uma cor para o carro criado.</div>
+  </div>
+  <div style="display: flex; justify-content: space-between;">
+    <button class="btn btn-secondary" (click)="voltar()">Voltar</button>
+    <button type="submit" class="btn btn-primary" (click)="criaCarro()">Submit</button>
+  </div>
+</form>

@@ -1,0 +1,40 @@
+<header>
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand mb-0 h1">Car-manager-client</a>
+      <button type="button" class="btn btn-warning">Logout</button>
+    </div>
+  </nav>
+
+
+  <section>
+    <div class="filtros-e-busca">
+      <input placeholder="TESTE" />
+      <button type="button" class="btn btn-primary" (click)="criaCarro()">Cria carro</button>
+      <button type="button" class="btn btn-primary" (click)="searchButton()">Search</button>
+    </div>
+  </section>
+</header>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Size</th>
+      <th scope="col">Color</th>
+      <th scope="col">Info</th>
+    </tr>
+  </thead>
+
+  <tbody *ngIf="Cars">
+    <tr *ngFor="let car of Cars">
+      <td>{{car.size}}</td>
+      <td>{{car.color}}</td>
+      <td><button type="button" class="btn btn-info">Info</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<footer class="mt-2 p-2 text-center">
+  <a href="https://angular.io/docs" style="text-decoration: none">Documentação</a>
+</footer>
