@@ -1,7 +1,9 @@
-import { NewCarComponent } from './home-page/new-car/new-car.component';
+import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ChangeCarComponent } from './home-page/change-car/change-car.component';
+import { NewCarComponent } from './home-page/new-car/new-car.component';
 
 const routes: Routes = [
   {
@@ -11,6 +13,14 @@ const routes: Routes = [
   {
     path: "new",
     component: NewCarComponent,
+  },
+  {
+    path: "update",
+    component: ChangeCarComponent,
+  },
+  {
+    path: "login",
+    component: LoginComponent,
   },
 ];
 

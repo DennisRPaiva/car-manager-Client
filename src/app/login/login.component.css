@@ -1,0 +1,111 @@
+body {
+  background-color: black !important;
+}
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: #4891ff ;
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 30px;
+}
+
+.page{
+  padding-top: 10%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  height: 1000px !important;
+}
+
+.button-box{
+   width: 220px;
+   margin: 35px auto;
+   position: relative;
+   box-shadow: 0 0 20px 9px #ff61241f;
+   border-radius: 30px;
+
+   display: flex;
+  justify-content: space-around;
+}
+
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 220px;
+   height: 100%;
+   background: #076aff;
+   border-radius: 30px;
+   transition: .5s;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 30px !important;
+  background: #076aff;
+  border: 0;
+  outline: none;
+  border-radius: 30px !important;
+  transition: .5s;
+}
+.submit-btn:hover {
+  background-color: #45b6fe;
+  transition: .8s;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login{
+  left: 50px;
+}
+
+#register {
+  left: 450px;
+}

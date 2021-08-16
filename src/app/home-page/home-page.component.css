@@ -4,3 +4,20 @@
   padding: 15px;
   background-color: #f9f9f9;
 }
+
+
+.page{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+.dia{
+  background-color: #0d6efd !important;
+}
+
+.noite{
+  background-color: green !important;
+  transition: .5s;
+}

@@ -1,0 +1,21 @@
+<!-- <button (click)="homePage()">home</button> -->
+
+<main class="page">
+  <div class="hero">
+    <div class="form-box ">
+      <!-- <button (click)="homePage()">Login</button> -->
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" click="login()">Bem Vindo!</button>
+      </div>
+
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" [(ngModel)]="usuario" name="user" required>
+        <input type="password" class="input-field" placeholder="Password" [(ngModel)]="senha" name="pass" required>
+
+        <button type="submit" class="submit-btn" (click)="homePage()">Log-in</button>
+      </form>
+
+    </div>
+  </div>
+</main>

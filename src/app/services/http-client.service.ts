@@ -20,4 +20,14 @@ export class HttpClientService {
     const response = this._httpClient.post(`${environment.config.tagmeApi.host}${_url}`, body)
     return response
   }
+
+  public put(_url: string, body: Object): Observable<any> {
+    const response = this._httpClient.put(`${environment.config.tagmeApi.host}${_url}`, body)
+    return response
+  }
+
+  public delete(_url: string): Observable<any> {
+    const response = this._httpClient.delete(`${environment.config.tagmeApi.host}${_url}`)
+    return response
+  }
 }

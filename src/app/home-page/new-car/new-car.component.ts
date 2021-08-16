@@ -30,6 +30,8 @@ export class NewCarComponent implements OnInit {
       })
       alert("Carro criado")
     }
+
+    this.router.navigate(['/'])
   }
 
   voltar() {
