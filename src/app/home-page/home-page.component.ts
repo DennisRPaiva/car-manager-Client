@@ -22,8 +22,8 @@ export class HomePageComponent implements OnInit {
     if (sessionStorage.getItem('carsList')) {
       carsList = sessionStorage.getItem('carsList')
       this.Cars = JSON.parse(carsList)
+      this.searchButton()
     }
-    console.log(this.horaDia)
   }
 
   mudaCor() {

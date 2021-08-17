@@ -33,8 +33,11 @@ export class ChangeCarComponent implements OnInit {
         this.selectedId = state.carID
       })
 
+
     this.carService.getCarById(this.selectedId).subscribe(response => {
       this.selectedCar = response
+      this.size = this.selectedCar.size
+      this.color = this.selectedCar.color
     })
   }
 
@@ -49,6 +52,8 @@ export class ChangeCarComponent implements OnInit {
     this.carService.updateCar(this.selectedId, this.changedCar).subscribe(response => {
       console.log(response)
     })
+
+    this.router.navigate(['/'])
   }
 
 }

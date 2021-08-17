@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewCarComponent implements OnInit {
 
-  size: string = "Colossal";
-  color: string = "Void";
+  size: string = "";
+  color: string = "";
 
 
   constructor(private carService: CarService, private router: Router) { }
