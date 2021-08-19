@@ -25,12 +25,12 @@
       </tr>
     </thead>
 
-    <tbody *ngIf="Cars">
+    <tbody id="lista_carros" *ngIf="Cars">
       <tr *ngFor="let car of Cars">
         <td>{{car.size}}</td>
         <td>{{car.color}}</td>
-        <td><button type="button" class="btn btn-info" (click)="updateCar(car)">Update</button></td>
-        <td><button type="button" class="btn btn-danger" (click)="deleteCar(car)">Delete</button></td>
+        <td><button id="updateButton" type="button" class="btn btn-info" (click)="updateCar(car)">Update</button></td>
+        <td><button id="deleteButton" type="button" class="btn btn-danger" (click)="deleteCar(car)">Delete</button></td>
       </tr>
     </tbody>
   </table>
